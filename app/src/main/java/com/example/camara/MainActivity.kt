@@ -43,12 +43,14 @@ class MainActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT).show()
             }
         }
+
     }
     private fun checkCameraPermission(): Boolean{
         return ActivityCompat
             .checkSelfPermission(this, Manifest.permission.CAMERA)==
                 PackageManager.PERMISSION_GRANTED
     }
+
     private fun requestPermissions() {
         ActivityCompat.requestPermissions(
             this,
